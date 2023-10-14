@@ -2,8 +2,7 @@
 title:               'Dennis I. Barrett'
 tagline:             'programming • math • data'
 description:         ''
-url:                 https://dennis-barrett.github.io
-baseurl:             ''
+url:                 'dennisbarrett.co.za'
 imgurl:              '/public/img'
 paginate:            3
 permalink:           pretty
