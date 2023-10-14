@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Limeline RSS in Script Kit
+title: Limeline RSS Feed in Script Kit
 ---
 
 A few months back I was looking for an RSS syndicator and found [Limeline](https://limelina.app). If you haven't
