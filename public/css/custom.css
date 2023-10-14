@@ -34,7 +34,7 @@ a[href^="http"]::after {
   display: inline-block;
 }
 
-a[href^="https://www.dennisbarrett.co.za/"]::after {
+a[href^="https://www.dennisbarrett.co.za"]::after {
   display: none !important;
 }
 
