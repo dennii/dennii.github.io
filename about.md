@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-Hi there, I'm Dennis Barrett, hailing from Johannesburg, South Africa.
+Hi there! I'm Dennis Barrett, hailing from Johannesburg, South Africa.
 
 During my initial university years, I immersed myself in mathematics, both pure
 and applied, as well as computer science. This led on to a MSc[^1] and PhD[^2]
@@ -12,7 +12,7 @@ I then spent a couple of years doing postdoctoral research in nonholonomic
 Riemannian geometry and the geometry of homogeneous spaces.
 
 After my postdoctoral studies, I transitioned into industry, working as a (now
-senior) consultant at [Business Science Corporation](https://www.bscglobal.com).
+Tech Lead) consultant at [Business Science Corporation](https://www.bscglobal.com).
 In this role, I've gained experience and an appreciation for data analysis/
 science/engineering, analytics engineering, and software development.
 

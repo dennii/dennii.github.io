@@ -36,7 +36,9 @@ toc: true
 
 ### Industry experience
 
-**Sep 2020–** Analytics Consultant, Business Science Corporation
+**Oct 2023–** Technical Lead, Business Science Corporation
+
+**Sep 2020–Oct 2023** Analytics Consultant, Business Science Corporation
 
 Selected projects:
 
