@@ -11,8 +11,8 @@ respectively. I then spent a couple of years doing postdoctoral research in nonh
 geometry of homogeneous spaces.
 
 After my postdoctoral studies, I transitioned into industry, working as a consultant---now Tech Lead---at
-[Business Science Corporation](https://www.bscglobal.com). In this role, I've gained experience and an appreciation for
-data analysis/science/engineering, analytics engineering, and software development.
+[Business Science Corporation](https://www.bscglobal.com). In this role, I've gained experience in, and an appreciation
+for, data analysis/science/engineering, analytics engineering, and software development.
 
 My interests are many and varied, spanning the gamut of mathematics, programming and computer science, and data. I hope
 to share some of these interests on this blog.
