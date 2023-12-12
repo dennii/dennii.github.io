@@ -35,7 +35,7 @@ As a SQL DDL:
 create table db.positions (
   id         int,
   vehicle_id int,
-  timestamp  timestamp,
+  timestamp  datetime,
   latitude   float,
   longitude  float
 );
@@ -59,7 +59,7 @@ will just be an approximation---albeit a pretty accurate one.
 To simplify things, let's assume we've defined a Haversine SQL function:
 
 ```sql
-haversine(lat_1, lon_1, lat_2, lon_2)
+db.haversine(lat_1, lon_1, lat_2, lon_2)
 ```
 
 Armed with the above function, we can calculate the point-to-point speed of the vehicle at each position. Now typically
@@ -79,32 +79,29 @@ select
   pos.id,
   pos.vehicle_id,
   kmh.kmh_to_next_position
-from db.positions pos
+from dbo.positions pos
 cross apply (
-  -- Convert latitude and longitudes to radians.
+  -- Convert latitudes and longitudes to radians
   select
-    radian(latitude ) as latitude,
-    radian(longitude) as longitude
+    timestamp,
+    radians(latitude ) as latitude,
+    radians(longitude) as longitude
 ) cur
 cross apply (
-  -- Get the next timestamp and position coordinates.
-  select
-    lead(pos.timestamp) over (
-      partition by pos.vehicle_id
-      order by pos.timestamp
-    ) as timestamp,
-    lead(cur.latitude) over (
-      partition by pos.vehicle_id
-      order by pos.timestamp
-    ) as latitude,
-    lead(cur.longitude) over (
-      partition by pos.vehicle_id
-      order by pos.timestamp
-    ) as longitude
+  -- Get a vehicle's next timestamp and position coordinates
+  select top 1
+    cra.timestamp,
+    radians(cra.latitude ) as latitude,
+    radians(cra.longitude) as longitude
+  from dbo.positions cra
+  where 1=1
+  and cra.vehicle_id = pos.vehicle_id
+  and cra.timestamp  > pos.timestamp
 ) nxt
 cross apply (
+  -- Calculate the KM and hours to a vehicle's next position
   select
-    haversine(
+    dbo.haversine(
       cur.latitude, cur.longitude,
       nxt.latitude, nxt.longitude
     ) as km_to_next_position,
@@ -115,9 +112,10 @@ cross apply (
     ) / 3600.0 as hr_to_next_position
 ) tnp
 cross apply (
+  -- Calculate the KM/hr to a vehicle's next position
   select
     tnp.km_to_next_position / tnp.hr_to_next_position as kmh_to_next_position
-) kmh
+) kmh;
 ```
 
 The calculations are now broken up into a sequence of `cross apply`'s:
