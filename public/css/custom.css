@@ -71,3 +71,9 @@ a[href^="http://localhost"]::after {
 code, pre {
   font-family: 'Ubuntu Mono', Consolas, 'Courier New', Courier, monospace;
 }
+
+img + em {
+  display: block;
+  text-align: center; 
+  font-size: 0.6em;
+}
