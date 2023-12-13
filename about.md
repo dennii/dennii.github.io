@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+permalink: /about/
 ---
 
 Hi there! I'm Dennis Barrett, hailing from Johannesburg, South Africa.
@@ -15,7 +16,7 @@ After my postdoctoral studies, I transitioned into industry, working as a consul
 for, data analysis/science/engineering, analytics engineering, and software development.
 
 My interests are many and varied, spanning the gamut of mathematics, programming and computer science, and data. I hope
-to share some of these interests on this blog.
+to share some of these interests on this blog and via my [Data Dispatch](/data-dispatch/) channels.
 
 ## Links
 
