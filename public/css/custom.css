@@ -34,11 +34,13 @@ a[href^="http"]::after {
   display: inline-block;
 }
 
-a[href^="https://www.dennisbarrett.co.za"]::after {
+a[href^="https://www.dennisbarrett.co.za"]::after
+{
   display: none !important;
 }
 
-a[href^="http://localhost"]::after {
+a[href^="http://localhost"]::after
+{
   display: none !important;
 }
 
@@ -64,16 +66,49 @@ a[href^="http://localhost"]::after {
   text-decoration: none;
 }
 
-#table-of-contents ul, ol, dl {
+#table-of-contents ul,
+ol,
+dl {
   margin-bottom: 0px;
 }
 
-code, pre {
-  font-family: 'Ubuntu Mono', Consolas, 'Courier New', Courier, monospace;
+code,
+pre {
+  font-family: "Ubuntu Mono", Consolas, "Courier New", Courier, monospace;
 }
 
 img + em {
   display: block;
-  text-align: center; 
+  text-align: center;
   font-size: 0.6em;
+}
+
+.noteBoxes {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: smaller;
+}
+
+.danger {
+  border-color: #ec6661;
+  background-color: rgba(231, 111, 81, 0.1);
+}
+
+.warn {
+  border-color: #e7bf51;
+  background-color: rgba(231, 191, 81, 0.1);
+}
+
+.note {
+  border-color: #0096c7;
+  background-color: rgba(0, 150, 199, 0.1);
+}
+
+.info {
+  border-color: #00b353;
+  background-color: rgba(0, 179, 83, 0.1);
 }
