@@ -5,7 +5,10 @@ layout: default
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
+
+  {% capture info_content %} This is a
+  <a href="{{ site.baseurl }}/data-dispatch">Data Dispatch</a> post. {%
+  endcapture %} {% include info.html content=info_content %} {{ content }}
 </div>
 
 {% if site.related_posts.size >= 1 %}
