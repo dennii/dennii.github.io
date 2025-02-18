@@ -3,9 +3,9 @@ layout: page
 title: Posts
 ---
 
-## Blog
+## Posts
 
-This is an archive of my blog posts.
+This is an archive of my posts.
 
 <ul>
   {% for post in site.posts %}
