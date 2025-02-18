@@ -4,16 +4,16 @@ layout: blog-post
 excerpt_separator: <!--more-->
 ---
 
-Welcome to my blog! You can learn more about me in the [About]({{ site.url }}{% link about.md %}) section, or view a
-detailed CV [here]({{ site.url }}{% link cv.md %}). But in short:
+Welcome to my my website! You can learn more about me in the [About]({{ site.url }}{% link about.md %}) section, or
+view a detailed CV [here]({{ site.url }}{% link cv.md %}). But in short:
 
 - I like programming.
 - I like maths.
 - I (sometimes) like data.
 
-This blog will be my avenue for sharing some things I find useful or interesting, and hopefully you feel the same way.
-Since a purely "welcome" post would be pretty dull, I'll start the blog off by sharing with you a T-SQL device that can
-come in useful for helping to structure complex queries.
+This website will be my avenue for sharing some things I find useful or interesting, and hopefully you feel the same
+way. Since a purely "welcome" post would be pretty dull, I'll start the posts off by sharing with you a T-SQL device
+that can come in useful for helping to structure complex queries.
 
 <!--more-->
 
