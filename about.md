@@ -14,7 +14,7 @@ geometry of homogeneous spaces.
 After my postdoctoral studies, I transitioned into industry, working as a consultant---eventually Tech Lead---at
 [Business Science Corporation](https://www.bscglobal.com). In that role I gained experience in, and an appreciation
 for, data analysis / science / engineering, analytics engineering, and software development. My current job involves
-the development of a data-driven algorithmic trading platform. In this role, I have the opportunity to engage with all
+the development of a data-driven algorithmic trading platform. In this role I have the opportunity to engage with all
 my areas of interest: data engineering, data science, and software development.
 
 I'm also available for consulting work, and I'm always happy to discuss ideas and projects. Feel free to reach out to
